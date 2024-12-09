@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .title h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('background.jpg'); /* Ensure the path to the background image is correct */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: rgb(225, 158, 42);
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 100vh; /* Ensures the hero section takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Hero Section Content */
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensures text is above the background overlay */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px; /* Adds space between title and paragraph */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Adds space between paragraph and button */
+}
+
+.cta-btn {
+    background-color: #f1c40f;
+    color: #333;
+    padding: 15px 30px; /* Increased padding for a larger button */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1em; /* Slightly larger font size */
+    transition: background-color 0.3s ease; 
+}
+
+.cta-btn:hover {
+    background-color: #d4a101;
+}
+
+#services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4; 
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.service-item {
+    position: relative;
+    overflow: hidden; /* Ensures images don't overflow their containers */
+}
+
+.service-item img {
+    width: 100%;
+    height: 250px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+#booking {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#booking form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#booking input,
+#booking button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#booking button {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#booking button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
